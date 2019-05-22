@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center_vertical">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <LinearLayout
+               android:id="@+id/linear_title"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textAlignment="center"
+                   android:text="LOGIN DELIVERY"/>
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/linear_user"
+               android:layout_marginTop="20dp"
+               android:layout_below="@+id/linear_title"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="USUARIO"/>
+               <EditText
+                   android:id="@+id/input_user"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="text"/>
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/linear_pass"
+               android:layout_below="@+id/linear_user"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="CONTRASENA"/>
+               <EditText
+                   android:id="@+id/input_pass"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:inputType="text"/>
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/linear_btn"
+               android:layout_marginTop="20dp"
+               android:layout_below="@+id/linear_pass"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <Button
+                   android:id="@+id/btn_register"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="REGISTRARME"
+                   android:layout_weight="1"/>
+               <Button
+                   android:id="@+id/btn_login"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="INGRESAR"
+                   android:layout_weight="1"/>
+           </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
